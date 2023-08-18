@@ -1,0 +1,188 @@
+.navbar {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  width: 100%;
+  background-color: #f8f9fa; /* light aqua */
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #007bff; /* blue */
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9); /* black */
+}
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: rgba(0, 0, 0, 0.9); /* black */
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group > .form-control,
+.input-group > .custom-select,
+.input-group > .custom-file {
+  position: relative;
+  flex: 1 1 0%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.input-group-append,
+.input-group-prepend {
+  display: flex;
+}
+
+.input-group-append .btn,
+.input-group-prepend .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.input-group-append .btn:focus,
+.input-group-prepend .btn:focus {
+  z-index: 3;
+}
+
+.input-group-prepend .btn + .btn,
+.input-group-prepend .btn + .input-group-text,
+.input-group-prepend .input-group-text + .input-group-text,
+.input-group-prepend .input-group-text + .btn,
+.input-group-append .btn + .btn,
+.input-group-append .btn + .input-group-text,
+.input-group-append .input-group-text + .input-group-text,
+.input-group-append .input-group-text + .btn {
+  margin-left: -1px;
+}
+
+.input-group-prepend {
+  margin-right: 10px;
+}
+
+.input-group-append {
+  margin-left: -1px;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057; /* dark gray */
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef; /* light gray */
+  border: 1px solid #ced4da; /* light gray */
+  border-radius: 0.25rem;
+}
+
+.input-group-text input[type="radio"],
+.input-group-text input[type="checkbox"] {
+  margin-top: 0;
+}
+
+.form-inline .input-group {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.notif-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30vw;
+  padding: 5px;
+  background-color: rgba(45, 2, 67, 0.507);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.notif-category{
+  flex:1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.notif-category{
+  border: 0.5px solid rgb(202, 197, 197);
+  border-bottom: none;
+  background-color: rgba(45, 2, 67, 0.399);
+}
+
+.notif-category:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(152, 147, 147);
+  text-decoration-line: 2px;
+}
+
+.notif-category.active{
+  text-decoration: underline;
+  text-decoration-color: #737277;
+  text-decoration-line: 1px;
+  background-color: white;
+}
+
+.no-data-div{
+  display:flex;
+  width:100%;
+  background-color: #e9ecef;
+  justify-content: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+}
+
+/* Table Header (th) Styling */
+table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table Row (tr) Styling */
+table tr {
+  border: 1px solid #ccc;
+}
+
+/* Table Data (td) Styling */
+table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Hover effect for rows */
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Striped rows */
+table  {
+  background-color: #f2f2f2;
+}

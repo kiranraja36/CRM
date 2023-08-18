@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+}
+main {
+
+  width: 100%;
+  padding: 20px;
+  
+  
+}
+.sidebar {
+  background: rgba(22, 1, 33, 0.908);
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+ 
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 20px;
+  line-height: 0;
+}
+.bars {
+  width: 40px;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 0%;
+  height: 30px;
+}
+.search input {
+  border: none;
+  margin-left: 5px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: rgb(3, 0, 0);
+}
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgba(22, 1, 33, 0.908);
+  text-decoration: none;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(61, 28, 55);
+  text-decoration: none;
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+
+}
+.social {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.social button {
+  background-color: #3b5998; /* Facebook blue color */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social button:hover {
+  background-color: #4267b2; /* Slightly darker Facebook blue on hover */
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff; /* Icon color */
+}
